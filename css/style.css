@@ -98,13 +98,14 @@ nav{
     border-bottom: 1px solid #0005;
 }
 
-nav img{
-    width: 30px;
-    height: 30px;
+nav p{
+    margin: 8px 4px;
+    color: #fff;
+    font-weight: 700;
 }
 
 nav ul {
-    margin: 0px 30px;
+    margin: 0px 0px;
 }
 
 nav ul li{
@@ -122,13 +123,18 @@ nav ul li:hover{
 
 nav ul li a{
     color: #fff;
-    padding: 30px;
+    padding: 0px;
     text-decoration: none;
 }
 
 .opaque ul li a{
     color: #000;
 }
+
+.opaque p{
+    color: #2c343e;
+}
+
 
 /* About */
 
@@ -174,16 +180,30 @@ nav ul li a{
 }
 
 #service .container .card{
-    height: 240px;
-    padding: 20px;
+    height: 280px;
+    padding: 40px 20px;
     text-align: center;
     border: 2px solid #fff5;
     color: #fff;
     background: transparent;
+    transition: 0.6s all;
+}
+
+#service .container .card i{
+    color: #004A80;
+    transition: 0.6s all;
 }
 
 #service .container .card:hover{
     border: 2px solid #004A80;
+}
+
+#service .container .card:hover a{
+    color: #004A80;
+}
+
+#service .container .card:hover i{
+    color: #fff;
 }
 
 #service .container .card h4{
@@ -197,6 +217,15 @@ nav ul li a{
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
 }
+
+#service .container .card a{
+    font-size: 14px;
+    color: #fff;
+    padding: 0px 8px;
+    text-transform: uppercase;
+    transition: 0.6s all;
+}
+
 
 /* Testimonials */
 
@@ -224,27 +253,119 @@ nav ul li a{
     right: 30px;
     top: 60px;
     border: none;
+    background-color: #2c343e;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 #testimonial .container .wrapper .card .inner-card{
-    background-color: #fff;
+    background-color: #2c343e;
     padding: 50px;
 }
 
 #testimonial .container .wrapper .card .inner-card h2{
     font-weight: 600;
     margin-bottom: 40px;
+    color: white;
 }
 
 #testimonial .container .wrapper .card .inner-card p{
     font-size: 14px;
     font-family: 'Crimson Text', serif;
+    color: white;
+    margin-top: 15px;
 }
 
 #testimonial .container .wrapper .card .inner-card img{
-    width: 30px;
-    height: 30px;
+    width: 60px;
+    height: 60px;
     object-fit: cover;
     border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+/* footer */
+
+footer{
+    padding: 80px 0px;
+    width: 100%;
+    background-color: #2c343e;
+    height: auto;
+}
+
+footer .container hr{
+    background-color: #fff5;
+}
+
+footer .container .footer-btm{
+    color:#fff;
+    padding-top: 20px;
+}
+
+footer .container .footer-btm h4{
+    font-weight: 700;
+    padding: 10px 0px;
+}
+
+footer .container .footer-btm p{
+    font-size: 14px;
+    line-height: 12px;
+}
+
+footer .container .footer-btm .subscribe input{
+    padding: 6px 10px;
+    outline: none;
+    border: none;
+}
+
+footer .container .footer-btm .subscribe button{
+    padding: 6px 10px;
+    font-weight: 700;
+    background-color: #FFD700;
+    border: none;
+    border-radius: 5px;
+}
+
+/* contact */
+
+#contact{
+    padding-top: 140px;
+}
+
+#contact .container h4{
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+#contact .container h3{
+    font-size: 33px;
+    font-weight: 700;
+}
+
+#contact .container .diff-sect{
+    border: 1px solid #0005;
+    padding: 30px;
+}
+
+#contact .container .diff-sect:hover{
+    background-color: #2c343e;
+    color: #fff;
+}
+
+#contact .container .diff-sect h4{
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 10px;
+    margin-top: 10px;
+}
+
+#contact .container .c_form input{
+    width: 25%;
+}
+
+/* Program */
+
+#program{
+    padding: 140px 0px;
 }
